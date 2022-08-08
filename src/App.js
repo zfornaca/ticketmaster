@@ -17,7 +17,6 @@ import Event from './Event';
 
 export default function TicketmasterApp() {
   const [events, setEvents] = useState([]);
-  // const [links, setLinks] = useState({});
 
   const [keyword, setKeyword] = useState('');
   const [city, setCity] = useState('');
@@ -31,8 +30,6 @@ export default function TicketmasterApp() {
       setNoResults(true);
     }
 
-    // delete res.links["self"];
-    // setLinks(res.links);
     setEvents(res.events);
   }
 
